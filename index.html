@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>&copy; Vítor Romão / Leviih</header>
+   <main class="windows">
+        <div id="res"></div>
+        <table>
+            <tr>
+                <td><input type="button" value="C" onclick='clean()' class="buttons"></td>
+                <td><input type="button" value="&lt;" onclick="back()" class="buttons"></td>
+                <td><input type="button" value="/" onclick="calcular('/')" class="buttons"></td>
+                <td><input type="button" value="*" onclick="calcular('*')" class="buttons"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="calcular(7)" class="buttons"></td>
+                <td><input type="button" value="8" onclick="calcular(8)" class="buttons"></td>
+                <td><input type="button" value="9" onclick="calcular(9)" class="buttons"></td>
+                <td><input type="button" value="+"onclick="calcular('+')" class="buttons"></td>
+            </tr>
+            <tr>
+               <td><input type="button" value="4" onclick="calcular(4)" class="buttons"></td>
+                <td><input type="button" value="5" onclick="calcular(5)" class="buttons"></td>
+               <td><input type="button" value="6" onclick="calcular(6)" class="buttons"></td>
+                <td><input type="button" value="-" onclick="calcular('-')" class="buttons"></td>
+            </tr>
+            <tr>
+                
+                <td><input type="button" value="1" onclick="calcular(1)" class="buttons"></td>
+                <td><input type="button" value="2" onclick="calcular(2)" class="buttons"></td>
+                <td><input type="button" value="3" onclick="calcular(3)" class="buttons"></td>
+                <td rowspan="2"><input type="button" value="=" onclick="calculo()" class="buttons" style="height: 106px;"></td>
+            </tr>     
+                <td colspan="2"> <input type ="button" value="0" onclick="calcular(0)" class="buttons" style="width:106px"></td>
+                <td><input type="button" value="." onclick="calcular('.')" class="buttons"></td>
+            </tr>       
+        </table>
+    </main> 
+<script src="index.js"></script>
+</body>
+</html>
